@@ -1,0 +1,7 @@
+<%- include('partial/header') %>
+    <form class="container d-flex flex-column " action="/post/<%=user.username%>" method="post">
+        <input type="hidden" name="hidden" value="<%= user %> ">
+        <textarea name="postContent" cols="30" rows="10"></textarea>
+        <button class="btn btn-lg btn-success" type="submit">Add new Post</button>
+    </form>
+    <%- include('partial/footer') %>
